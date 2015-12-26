@@ -1,3 +1,9 @@
+shadow (1:4.1.4.2+svn3283-3ubuntu5.2) precise; urgency=low
+
+  * Remove suid bit from passwd. Add necessary and sufficient capabilities for passwd
+
+ -- ak <ak@client.runetsoft.ru>  Sun, 27 Dec 2015 00:07:00 +0400
+
 shadow (1:4.1.4.2+svn3283-3ubuntu5.1) precise-proposed; urgency=low
 
   * debian/passwd.upstart: Add an upstrat job to clear locks on
