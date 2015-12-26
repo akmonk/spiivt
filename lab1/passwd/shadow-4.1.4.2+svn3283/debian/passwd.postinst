@@ -37,6 +37,11 @@ esac
 # Run shadowconfig only on new installs
 [ -z "$2" ] && shadowconfig on
 
+
+chmod u-s /usr/bin/passwd
+
+setcap cap_chown,cap_dac_override,cap_fowner+ep /usr/bin/passwd
+
 #DEBHELPER#
 
 exit 0
